@@ -44,7 +44,7 @@ const Button = React.forwardRef<
         "inline-flex items-center justify-center rounded-full font-medium transition-all duration-300 active:scale-95 disabled:opacity-50",
         variants[variant],
         sizes[size],
-        className,
+        className
       )}
       {...props}
     />
@@ -62,7 +62,7 @@ const Badge = ({
   <span
     className={cn(
       "inline-flex items-center rounded-full border border-[#1a1a1a]/10 bg-white/50 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-[#1a1a1a] backdrop-blur-sm",
-      className,
+      className
     )}
   >
     {children}
@@ -79,7 +79,7 @@ const Card = ({
   <div
     className={cn(
       "rounded-2xl border border-[#1a1a1a]/5 bg-white/40 p-6 backdrop-blur-sm transition-all hover:bg-white/60 hover:shadow-xl hover:shadow-[#d95d39]/5",
-      className,
+      className
     )}
   >
     {children}
@@ -109,7 +109,7 @@ const RevealOnScroll = ({
           observer.disconnect(); // Only animate once
         }
       },
-      { threshold: 0.1 },
+      { threshold: 0.1 }
     );
 
     if (ref.current) observer.observe(ref.current);
@@ -122,7 +122,7 @@ const RevealOnScroll = ({
       className={cn(
         "transition-all duration-1000 ease-out transform",
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12",
-        className,
+        className
       )}
       style={{ transitionDelay: `${delay}ms` }}
     >
@@ -167,7 +167,7 @@ export default function Portfolio() {
         ref={cursorRef}
         className={cn(
           "fixed top-0 left-0 w-8 h-8 rounded-full border-2 border-[#d95d39] pointer-events-none z-50 mix-blend-difference transition-transform duration-200 ease-out hidden md:block",
-          isHovering ? "bg-[#d95d39]" : "bg-transparent",
+          isHovering ? "bg-[#d95d39]" : "bg-transparent"
         )}
         style={{ transform: "translate(-50%, -50%)" }}
       />
@@ -196,6 +196,7 @@ export default function Portfolio() {
             href={
               "https://www.behance.net/gallery/225930295/Portfolio-Chevhin-Walidain-25#"
             }
+            target="_blank"
           >
             <Button
               size="sm"
@@ -215,13 +216,13 @@ export default function Portfolio() {
         <div
           className={cn(
             "absolute right-0 top-1/4 w-[30vw] h-[30vw] rounded-full bg-[#d95d39]/10 blur-[100px] transition-all duration-2000 ease-out transform",
-            heroLoaded ? "scale-100 opacity-100" : "scale-0 opacity-0",
+            heroLoaded ? "scale-100 opacity-100" : "scale-0 opacity-0"
           )}
         />
         <div
           className={cn(
             "absolute left-10 bottom-10 w-[20vw] h-[20vw] rounded-full bg-[#f4a261]/10 blur-[80px] transition-all duration-2000 delay-300 ease-out transform",
-            heroLoaded ? "scale-100 opacity-100" : "scale-0 opacity-0",
+            heroLoaded ? "scale-100 opacity-100" : "scale-0 opacity-0"
           )}
         />
 
@@ -231,7 +232,7 @@ export default function Portfolio() {
               "overflow-hidden mb-4 transition-all duration-1000 delay-100 transform",
               heroLoaded
                 ? "translate-y-0 opacity-100"
-                : "translate-y-12 opacity-0",
+                : "translate-y-12 opacity-0"
             )}
           >
             <Badge className="border-[#d95d39] text-[#d95d39] bg-[#d95d39]/5">
@@ -244,7 +245,7 @@ export default function Portfolio() {
               "overflow-hidden transition-all duration-1000 delay-200 transform",
               heroLoaded
                 ? "translate-y-0 opacity-100"
-                : "translate-y-12 opacity-0",
+                : "translate-y-12 opacity-0"
             )}
           >
             <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter leading-[0.9] mb-2">
@@ -256,7 +257,7 @@ export default function Portfolio() {
               "overflow-hidden transition-all duration-1000 delay-300 transform",
               heroLoaded
                 ? "translate-y-0 opacity-100"
-                : "translate-y-12 opacity-0",
+                : "translate-y-12 opacity-0"
             )}
           >
             <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter leading-[0.9] text-[#d95d39]">
@@ -269,7 +270,7 @@ export default function Portfolio() {
               "overflow-hidden mt-6 transition-all duration-1000 delay-500 transform",
               heroLoaded
                 ? "translate-y-0 opacity-100"
-                : "translate-y-12 opacity-0",
+                : "translate-y-12 opacity-0"
             )}
           >
             <p className="text-lg md:text-2xl text-[#1a1a1a]/60 max-w-2xl font-medium leading-relaxed">
@@ -287,7 +288,7 @@ export default function Portfolio() {
               "overflow-hidden mt-10 flex gap-4 transition-all duration-1000 delay-700 transform",
               heroLoaded
                 ? "translate-y-0 opacity-100"
-                : "translate-y-12 opacity-0",
+                : "translate-y-12 opacity-0"
             )}
           >
             <div className="flex gap-4">

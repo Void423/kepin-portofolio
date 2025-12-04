@@ -25,6 +25,7 @@ export const metadata: Metadata = {
     siteName: "Chevhin Walidain Portfolio",
     images: [
       {
+        // url: "https://chevhin-walidain.netlify.app/og.png",
         url: "https://chevhin-walidain.netlify.app/og.png",
         width: 1200,
         height: 630,
