@@ -21,11 +21,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Chevhin Walidain Portfolio",
     description: "Portfolio of Chevhin Walidain",
-    url: "https://chevhin-walidain.vercel.app/",
+    url: "https://chevhin-walidain.netlify.app/",
     siteName: "Chevhin Walidain Portfolio",
     images: [
       {
-        url: "https://chevhin-walidain.vercel.app/og.png",
+        url: "https://chevhin-walidain.netlify.app/og.png",
         width: 1200,
         height: 630,
         alt: "Chevhin Walidain Portfolio",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Chevhin Walidain Portfolio",
     description: "Portfolio of Chevhin Walidain",
-    images: ["https://chevhin-walidain.vercel.app/og.png"],
+    images: ["https://chevhin-walidain.netlify.app/og.png"],
   },
 };
 
